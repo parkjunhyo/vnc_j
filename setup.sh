@@ -46,3 +46,8 @@ fi
 ## start with monitor size
 monitor_size="1024x768"
 vncserver -geometry $monitor_size
+
+## installation clean
+## sudo dpkg --configure -a
+## sudo apt-get install -f
+## sudo apt-get remove --purge getdeb-repository
