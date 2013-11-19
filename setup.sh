@@ -1,5 +1,8 @@
 #! /usr/bin/env bash
 
+working_directory=$(pwd)
+source $working_directory/vnc.env
+
 ## setup gnome-core
 if [ ! -d "/etc/gnome/" ]
 then
@@ -44,7 +47,7 @@ then
 fi
 
 ## start with monitor size
-monitor_size="1024x768"
+monitor_size=${monitor_size:="1600x900"}
 vncserver -geometry $monitor_size
 
 ## installation clean
