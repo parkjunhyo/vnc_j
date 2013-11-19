@@ -47,8 +47,8 @@ then
 fi
 
 ## start with monitor size
-monitor_size=${monitor_size:="1600x900"}
-vncserver -geometry $monitor_size
+## monitor_size=${monitor_size:="1600x900"}
+## vncserver -geometry $monitor_size
 
 ## installation clean
 ## sudo dpkg --configure -a
